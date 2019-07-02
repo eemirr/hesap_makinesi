@@ -2,15 +2,12 @@
 
 # eval kullanarak hesap makinesi programı
 
-
-
 class Calc:
 
 	def __init__(self,data):
 
 		self.data = data + "~"
 		self._new_data = ''
-		
 
 	def evals(self):
 		try:
@@ -20,8 +17,7 @@ class Calc:
 
 	def control(self):
 
-		for i in self.data:
-				
+		for i in self.data:				
 			if i.strip() in '1234567890*/%-+~':
 				if i.strip() == '~':
 					pass					
